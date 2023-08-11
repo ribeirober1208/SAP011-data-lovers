@@ -24,6 +24,13 @@
   font-size: 40px;
 }
 
+.characters {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  margin-left: 50%;
+}
+
 .menu ul {
   list-style: none;
   padding: 0;
