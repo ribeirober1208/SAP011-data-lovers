@@ -180,7 +180,7 @@ footer {
   transition: transform 0.5s;
 }
 
-.card.flipped {
+.card .flipped {
   transform: rotateY(180deg);
 }
 
