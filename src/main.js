@@ -9,9 +9,10 @@ console.log(example, data);*/
 fetch('./data/got/got.json')
     .then(response => response.json())
     .then(data => {
-        const cardsContainer = document.getElementById('cardsContainer'); // Corrigido o acesso ao elemento
+        
+        const cardsContainer = document.getElementById('cardsContainer'); 
 
-        function createCard(character) {
+        data.got.forEach(character => {
             const card = document.createElement('div');
             card.classList.add('card', 'flippable');
 
@@ -52,31 +53,7 @@ fetch('./data/got/got.json')
             cardInner.appendChild(cardBack);
 
             card.appendChild(cardInner);
-
-            return card;
-        }
-
-        function renderCards(characters) {
-            cardsContainer.innerHTML = '';
-            characters.forEach(character => {
-                const card = createCard(character);
-                cardsContainer.appendChild(card);
-            });
-        }
-
-        renderCards(data.got);
-
-        const filterSelect = document.getElementById('filter');
-        filterSelect.addEventListener('change', () => {
-            const selectedValue = filterSelect.value;
-
-            if (selectedValue === 'a-z') {
-                data.got.sort((a, b) => a.fullName.localeCompare(b.fullName));
-            } else if (selectedValue === 'z-a') {
-                data.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
-            }
-
-            renderCards(data.got);
+            cardsContainer.appendChild(card);
         });
 
         const cards = document.querySelectorAll('.card');

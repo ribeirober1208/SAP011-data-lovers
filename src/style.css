@@ -195,7 +195,7 @@ footer {
 }
 
 .card .back .character-info {
-  display: block; 
+  display: none; 
 }
 
 .character-info {
