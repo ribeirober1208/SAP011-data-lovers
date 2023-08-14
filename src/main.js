@@ -9,7 +9,7 @@ console.log(example, data);*/
 fetch('./data/got/got.json')
     .then(Response => Response.json())
     .then(data => {
-        const cardsContainer = document.querySelector('.cards-container');
+        document.getElementById('cardsContainer');
 
         data.got.forEach(character => {
             const card = document.createElement('div');
