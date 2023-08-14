@@ -7,41 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
- <body>
+<body>
   <header>
     <img src="logo.png" class="logo" alt="Game Of Thrones">
-   </header>
+  </header>
   <main>
-  <img src="dragon.gif" class="background-dragon">
+    <img src="dragon.gif" class="background-dragon">
 
-  <div class="menu-container">
+    <div class="menu-container">
       <nav class="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Casas</a></li>
-        <li><a href="#">Reinos</a></li>
-        <li><a href="#">Personagens</a></li>
-        <li><a href="#">Curiosidades</a></li>
-     </ul> 
-    </nav>
-  </div> 
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Casas</a></li>
+          <li><a href="#">Reinos</a></li>
+          <li><a href="#">Personagens</a></li>
+          <li><a href="#">Curiosidades</a></li>
+        </ul>
+      </nav>
+    </div>
 
-   <div class="filter-container">
-        <label for = "filter" class="filter-label">Ordenar personagens por:</label>
-        <select id="filter">
-            <option value="a-z">A-Z</option>
-            <option value="z-a">Z-A</option>
-        </select>
-   </div>
+    <div class="filter-container">
+      <label for="filter" class="filter-label">Ordenar personagens por:</label>
+      <select id="filter">
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+      </select>
+    </div>
 
-   <div id="cardsContainer"></div>
-
-    <script src="main.js" type="module"></script>
-
-    </main>
-    <Footer>
-        <p class="creaters">created by: Alessandra Ribeiro | Karina Pedra</p>
-    </Footer>
-</body>
+    <div class="cards-container" id="cardsContainer"></div>
+       <script src="main.js" type="module"></script>
     
+  </main> 
+  <Footer>
+    <p class="creaters">created by: Alessandra Ribeiro | Karina Pedra</p>
+  </Footer>
+</body>
+
 </html>
