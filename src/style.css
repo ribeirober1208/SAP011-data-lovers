@@ -42,37 +42,73 @@
   font-size: 18px;
 }
 
+
+.insertName  {
+  display: flex;
+  position: absolute;
+  color: whitesmoke;
+  
+  margin: 0 0 50% 50%; 
+}
+.insertNameInput {
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
 .filter-container {
   display: flex;
   position: absolute;
-  align-items: center;
   color: whitesmoke;
-  margin-bottom: 20px;
-  margin-left: 370px;
-  margin-top: -50px;
+  margin-left: 20%;
+
+}
+
+.filter-familyContainer {
+  display: flex;
+  position: absolute;
+  color: whitesmoke;
+  margin-left: 70%;
+
 }
 
 .filter-label {
-  display: block;
+  display: flex;
   font-size: 14px;
-  margin-bottom: 10px;
-  color: whitesmoke;
   background-color: transparent;
-  padding: 0px 10px;
+  margin-right: 20px;
+}
+
+.filter-familyLabel {
+  display: flex;
+  font-style: 14px;
+  background-color: transparent;
+  margin-right: 20px;
 }
 
 #filter {
-  font-size: 12px;
-  border: none;
+  cursor: pointer;
   border-radius: 3px;
   color: whitesmoke;
+}
+
+#filterFamily  {
   cursor: pointer;
-  background-color: transparent;
+  border-radius: 3px;
+  color: whitesmoke;
 }
 
 #filter option {
   background-color: transparent;
-  color: whitesmoke;
+  color: rgb(61, 60, 60);
+  text-align: center;
+}
+
+#filterFamily option {
+  background-color: transparent;
+  color: rgb(61, 60, 60);
+  text-align: center;
 }
 
 .card {
@@ -195,7 +231,7 @@ footer {
 }
 
 .card .back .character-info {
-  display: block; 
+  display: none; 
 }
 
 .character-info {

@@ -8,8 +8,8 @@
 </head>
 
 <body>
-  <header>
-    <img src="logo.png" class="logo" alt="Game Of Thrones">
+  <header><a href="index.html">
+    <img src="logo.png" class="logo" alt="Game Of Thrones"></a>
   </header>
   <main>
     <img src="dragon.gif" class="background-dragon">
@@ -25,15 +25,43 @@
         </ul>
       </nav>
     </div>
-
+<div></div>
     <div class="filter-container">
-      <label for="filter" class="filter-label">Ordenar personagens por:</label>
-      <select id="filter">
-        <option value="a-z">A-Z</option>
-        <option value="z-a">Z-A</option>
-      </select>
-    </div>
+        <label for="filter" class="filter-label">Ordenar personagens por:</label>
+        <select id="filter">
+          <option value=""> Ordem alfabética </option>
+          <option value="">  </option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+      </div>
+      
+      <div class="insertName">
+        <input class="insertNameInput" placeholder="Busque pelo nome">
+      </div>
 
+     <div class="filter-familyContainer">
+        <label for="filterFamily" class="filter-familyLabel">Ordenar personagens por: </label>
+        <select id="filterFamily">
+          <option value="">Casas</option>
+          <option value="">--------</option>
+          <option value="Free Folk">Free Folk</option>
+          <option value="House Baelish"> Baelish</option>
+          <option value="House Baratheon"> Baratheon</option>
+          <option value="House Bolton"> Bolton</option>
+          <option value="House Clegane"> Clegane</option>
+          <option value="House Greyjoy"> Greyjoy</option>
+          <option value="House Lannister"> Lannister</option>
+          <option value="House Martell"> Martell</option>
+          <option value="House Mormont"> Mormont</option>
+          <option value="House Seaworth"> Seaworth</option>
+          <option value="House Stark"> Stark</option>
+          <option value="House Tarly"> Tarly</option>
+          <option value="House Targaryan"> Targaryan</option>
+          <option value="House Tyrell"> Tyrell</option>
+        </select>
+      </div> 
+    
     <div class="cards-container" id="cardsContainer"></div>
        <script src="main.js" type="module"></script>
     
