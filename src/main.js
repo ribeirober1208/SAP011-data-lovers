@@ -9,7 +9,9 @@ console.log(example, data);*/
 fetch('./data/got/got.json')
     .then(response => response.json())
     .then(data => {
-        const cardsContainer = document.getElementById('cardsContainer'); // Corrigido o acesso ao elemento
+        
+        const cardsContainer = document.getElementById('cardsContainer'); 
+
         data.got.forEach(character => {
             const card = document.createElement('div');
             card.classList.add('card', 'flippable');
