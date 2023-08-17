@@ -5,6 +5,10 @@ import data from './data/pokemon/pokemon.js';
 
 console.log(example, data);*/
 
+
+import { sortCharactersByFullName, filterCharactersByFamily } from './data.js';
+
+
 fetch('./data/got/got.json')
     .then(response => response.json())
     .then(data => {
@@ -73,15 +77,21 @@ fetch('./data/got/got.json')
         const filterSelect = document.getElementById('filter');
         filterSelect.addEventListener('change', () => {
             const selectedValue = filterSelect.value;
+            const sortedCharacters = sortCharactersByFullName(data.got, selectedValue);
+            renderCards(sortedCharacters);
 
-            if (selectedValue === 'a-z') {
-                data.got.sort((a, b) => a.fullName.localeCompare(b.fullName));
-            } else if (selectedValue === 'z-a') {
-                data.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
-            }
 
-            renderCards(data.got);
-        });
+        }); 
+
+        const filterFamilySelect = document.getElementById('filterFamily');
+        filterFamilySelect.addEventListener('change', () => {
+            const selectedFamily = filterFamilySelect.value;
+            const filteredCharacters = filterCharactersByFamily(data.got, selectedFamily);
+
+            renderCards(filteredCharacters);
+        })
+
+        
 
         renderCards(data.got);
     })
