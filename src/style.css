@@ -6,19 +6,26 @@
   padding: 0;
   font-size: small;
   box-sizing: border-box;
-  flex-wrap: wrap-reverse;
-  
+  color: white;
+}
+
+
+.all-filter {
+  /*border: 15px solid rgb(218, 20, 208);*/
+  display: flex;
+  padding-left: 5px;
+  justify-content: space-evenly
 }
 
 .logo {
   position: fixed;
-  top: 5%; 
+  top: 5%;
   left: 3%;
   width: 300px;
   height: 81px;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,29 +33,36 @@ header{
   height: 100px;
   background-color: black;
   z-index: 1;
-  justify-content: center
+  justify-content: center;
+  /*border: 15px solid yellow;*/
 }
 
-.menu{
-  position: relative;
-  top: 200px;
-  transform: translateY(-50%);
-  margin-left: 20%;
-  font-size: 10px;
+main {
+  /*border: 15px solid green;*/
+  display: flex;
+  
+  flex-wrap: none;
   margin-top: 80px;
-  margin-left:50px;
-  justify-content: space-evenly;
-  
 }
 
-.menu-container {
-  position: fixed;
-  margin-left: 20%;
+
+.menu {
+  /*border: 15px solid orange;*/
   font-size: 10px;
-  margin-left:200px;
-  justify-content: space-evenly;
+  margin-left: 50px;
+  width: 250px;
+  margin-top: 82px;
   
+
 }
+
+#principal {
+  /*border: 15px solid red;*/
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -65,20 +79,18 @@ header{
   font-size: 18px;
 }
 
-.filter{ 
+.filter {
   border: white;
   justify-content: flex-end;
 }
 
 .audioGot {
- display: flexbox;
+  display: flexbox;
 }
 
-.insertName  {
+.insertName {
   display: flex;
-  position: absolute;
   color: whitesmoke;
-  top: 230px
 }
 
 .insertNameInput {
@@ -91,46 +103,43 @@ header{
 
 .filter-container {
   display: flex;
-  position: absolute;
   color: whitesmoke;
-  margin-left: 28%;
-  top: 130px;
+
 }
 
 .filter-familyContainer {
   display: flex;
-  position: absolute;
   color: whitesmoke;
-  margin-left: 60%;
-  top: 130px;
+
+
 }
 
 .filter-label {
   display: flex;
   font-size: 14px;
   background-color: transparent;
-  margin-right: 20px;
+
 }
 
 .filter-familyLabel {
   display: flex;
   font-style: 14px;
   background-color: transparent;
-  margin-right: 20px;
+
 }
 
 #filter {
   cursor: pointer;
   border-radius: 3px;
   color: whitesmoke;
-  margin-bottom: 100px;
+
 }
 
-#filterFamily  {
+#filterFamily {
   cursor: pointer;
   border-radius: 3px;
   color: whitesmoke;
-  margin-bottom: 20px;
+
 }
 
 #filter option {
@@ -145,47 +154,12 @@ header{
   text-align: center;
 }
 
-.reset-pesquisa {
-  border-radius: 3px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  justify-content: flex-end;
-  position:fixed;
-}
-
-button {
-  background-color: transparent;
-  border-radius: 10px;
-  border: white;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  left: 5px;
-  justify-content: flex-end;
-}
-
-.card {
-  width: 200px;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-  width: 85%;
-  border: 1px solid #ddd;
-  background-color: transparent;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 10px 2px 4px rgba(0, 0, 0, 0.1);
+.cards-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  top: -100px;
-  margin-bottom: 5px;
-} 
+  flex-wrap: wrap;
+  justify-content:center;
+  /*border: 15px solid white;*/
+}
 
 .card img {
   width: 150px;
@@ -198,28 +172,28 @@ button {
 .card h2 {
   font-size: 16px;
   margin: 5px;
-} 
+}
 
 .card p {
   font-size: 12px;
   margin: 5px;
 }
 
-.cards-container { 
-  margin-top: 0px;
-  margin-left:370px;
-  margin-right: 60px;
-  margin-bottom: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  flex-direction: row;
-  justify-content: flex-end;
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 10px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 5px;
   color: white;
-  position: relative;
 }
 
 footer {
-  
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -229,7 +203,7 @@ footer {
   color: rgb(48, 44, 44);
   text-align: center;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Trajan', sans-serif;
 }
 
@@ -242,6 +216,7 @@ footer {
   object-fit: cover;
   z-index: -1;
 }
+
 .flippable {
   perspective: 1000px;
 }
@@ -257,7 +232,8 @@ footer {
   transform: rotateY(180deg);
 }
 
-.card .front, .card .back {
+.card .front,
+.card .back {
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -278,15 +254,16 @@ footer {
   background-color: rgb(26, 22, 22);
   color: white;
   border-radius: 10px;
-  transform: scaleX(-1); /*para manter o texto depois de virar*/
+  transform: scaleX(-1);
+  /*para manter o texto depois de virar*/
 }
 
 .card.flipped .back .character-info {
-  display: block; 
+  display: block;
 }
 
 .card .back .character-info {
-  display: none; 
+  display: none;
 }
 
 .character-info {
@@ -296,9 +273,28 @@ footer {
 
 @font-face {
   font-family: 'Trajan Pro; ' Trebuchet MS',  ' Lucida Sans Unicode',     ' Lucida Grande',       ' Lucida Sans',
-Arial, sans-serif;
+ Arial, sans-serif;
   src: url(font-trajan/TrajanPro-Bold.otf) format(opentype);
   src: url(font-trajan/TrajanPro-Regular.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width:500px) {
+  .menu {
+    display: none
+  }
+
+  .all-filter {
+    flex-direction: column;
+  }
+  .filter-familyLabel{
+    font-size: 10px;
+  }
+  .filter-label{
+    font-size: 10px;
+  }
+  .filter-container {
+    font-size: 10px;
+  }
 }
