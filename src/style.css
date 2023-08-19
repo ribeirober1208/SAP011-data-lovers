@@ -6,15 +6,36 @@
   padding: 0;
   font-size: small;
   box-sizing: border-box;
-  color: white;
+
 }
 
+a {
+  color: white;
+  text-decoration: none; 
+}
 
 .all-filter {
-  /*border: 15px solid rgb(218, 20, 208);*/
+  /*border: 2px solid rgb(247, 241, 246);*/
   display: flex;
   padding-left: 5px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  margin-right: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.clean {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+.clean:hover {
+  background-color: rgb(53, 50, 50);
 }
 
 .logo {
@@ -40,7 +61,6 @@ header {
 main {
   /*border: 15px solid green;*/
   display: flex;
-  
   flex-wrap: none;
   margin-top: 80px;
 }
@@ -51,15 +71,14 @@ main {
   font-size: 10px;
   margin-left: 50px;
   width: 250px;
-  margin-top: 82px;
-  
-
+  margin-top: 50px;
+  padding: 10px;
 }
 
 #principal {
   /*border: 15px solid red;*/
   width: 75%;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 30px;
 }
 
@@ -99,17 +118,23 @@ main {
   padding: 5px 5px 5px 5px;
   text-align: center;
   justify-content: flex-starts;
+  margin-bottom: 30px;
 }
 
 .filter-container {
+  /*posiciona os filtros*/
   display: flex;
   color: whitesmoke;
+  margin-right: 10px;
+  padding: auto;
 
 }
 
 .filter-familyContainer {
   display: flex;
   color: whitesmoke;
+  margin-right: 10px;
+  padding: auto;
 
 
 }
@@ -118,6 +143,8 @@ main {
   display: flex;
   font-size: 14px;
   background-color: transparent;
+  margin-right: 10px;
+  padding: auto;
 
 }
 
@@ -125,7 +152,8 @@ main {
   display: flex;
   font-style: 14px;
   background-color: transparent;
-
+  margin-right: 10px;
+  padding: auto;
 }
 
 #filter {
@@ -157,7 +185,8 @@ main {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
+  margin-top: 55px;
   /*border: 15px solid white;*/
 }
 
@@ -193,18 +222,15 @@ main {
 }
 
 footer {
-
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 50px;
   background-color: black;
-  color: rgb(48, 44, 44);
   text-align: center;
-  margin-top: 10px;
   font-size: 12px;
-  font-family: 'Trajan', sans-serif;
+  color: rgb(37, 36, 36);
 }
 
 .background-dragon {
@@ -248,6 +274,7 @@ footer {
 
 .card.flipped .front {
   display: none;
+  color: white;
 }
 
 .card.flipped .back {
@@ -282,18 +309,25 @@ footer {
 
 @media (max-width:500px) {
   .menu {
-    display: none
+    display:none;
   }
 
   .all-filter {
     flex-direction: column;
+    border: 2px solid rgb(247, 241, 246);
+    margin-inline: 5px;
+    border-radius: 10px;
+    gap: 10px;
   }
-  .filter-familyLabel{
+
+  .filter-familyLabel {
     font-size: 10px;
   }
-  .filter-label{
+
+  .filter-label {
     font-size: 10px;
   }
+
   .filter-container {
     font-size: 10px;
   }

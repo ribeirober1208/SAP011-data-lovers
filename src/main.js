@@ -12,7 +12,7 @@ import { sortCharactersByFullName, filterCharactersByFamily, filterCharactersByN
 fetch('./data/got/got.json')
     .then(response => response.json())
     .then(data => {
-        const cardsContainer = document.getElementById('cardsContainer'); 
+        const cardsContainer = document.getElementById('cardsContainer');
 
         function createCard(character) {
             const card = document.createElement('div');
@@ -81,7 +81,7 @@ fetch('./data/got/got.json')
             renderCards(sortedCharacters);
 
 
-        }); 
+        });
 
         const filterFamilySelect = document.getElementById('filterFamily');
         filterFamilySelect.addEventListener('change', () => {
@@ -98,7 +98,7 @@ fetch('./data/got/got.json')
             renderCards(filteredCharacters);
         });
 
-        
+
 
         renderCards(data.got);
     })
