@@ -11,7 +11,7 @@
 
 a {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .all-filter {
@@ -65,6 +65,12 @@ main {
   margin-top: 80px;
 }
 
+#principal {
+  /*border: 15px solid red;*/
+  width: 75%;
+  margin-top: 60px;
+  margin-left: 30px;
+}
 
 .menu {
   /*border: 15px solid orange;*/
@@ -73,13 +79,6 @@ main {
   width: 250px;
   margin-top: 50px;
   padding: 10px;
-}
-
-#principal {
-  /*border: 15px solid red;*/
-  width: 75%;
-  margin-top: 60px;
-  margin-left: 30px;
 }
 
 .menu ul {
@@ -110,6 +109,7 @@ main {
 .insertName {
   display: flex;
   color: whitesmoke;
+ 
 }
 
 .insertNameInput {
@@ -118,7 +118,7 @@ main {
   padding: 5px 5px 5px 5px;
   text-align: center;
   justify-content: flex-starts;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
 
 .filter-container {
@@ -308,10 +308,39 @@ footer {
 }
 
 @media (max-width:500px) {
-  .menu {
-    display:none;
+  main {
+    flex-direction: column;
   }
 
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 10px;
+
+  }
+
+  .menu ul {
+    list-style: inside;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    display: flex;
+  }
+
+  .menu ul li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .insertNameInput {
+    width: 320px;
+  }
   .all-filter {
     flex-direction: column;
     border: 2px solid rgb(247, 241, 246);
@@ -331,4 +360,5 @@ footer {
   .filter-container {
     font-size: 10px;
   }
+
 }
