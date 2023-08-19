@@ -8,7 +8,17 @@ export const anotherExample = () => {
   return 'OMG';
 };
 */
-
+  export function filterCharactersByName(characters, searchName) {
+  if (!searchName) {
+      return characters;
+  } else {
+      const lowerSearchName = searchName.toLowerCase();
+      return characters.filter(character => {
+          const fullName = `${character.firstName} ${character.lastName} ${character.family}`.toLowerCase();
+          return fullName.includes(lowerSearchName);
+      });
+  }
+}
 
 export function sortCharactersByFullName(characters, order) {
   return characters.slice().sort((a, b) => {

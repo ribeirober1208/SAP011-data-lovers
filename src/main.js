@@ -6,7 +6,7 @@ import data from './data/pokemon/pokemon.js';
 console.log(example, data);*/
 
 
-import { sortCharactersByFullName, filterCharactersByFamily } from './data.js';
+import { sortCharactersByFullName, filterCharactersByFamily, filterCharactersByName } from './data.js';
 
 
 fetch('./data/got/got.json')
@@ -90,6 +90,13 @@ fetch('./data/got/got.json')
 
             renderCards(filteredCharacters);
         })
+
+        const filterInput = document.getElementById('insertNameInput');
+        filterInput.addEventListener('input', () => {
+            const searchName = filterInput.value;
+            const filteredCharacters = filterCharactersByName(data.got, searchName);
+            renderCards(filteredCharacters);
+        });
 
         
 
