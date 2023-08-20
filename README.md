@@ -8,7 +8,8 @@ img_dragon.png
 
 </h1>
 
-## 1. Introdução segundo projeto do Bootcamp Laboratória chamado Data Lovers: tema GoT. Este projeto traz uma forma de interação com os fãs da série, onde ele pode imergir no mundo de GoT e conhecer ou relembrar dos personagens.
+## 1. Introdução:
+Segundo projeto do Bootcamp Laboratória chamado Data Lovers: tema GoT. Este projeto traz uma forma de interação com os fãs da série, onde ele pode imergir no mundo de GoT e conhecer ou relembrar dos personagens.
 
 ## 2. Resumo do projeto: 
 Navegue pelos 7 reinos de GoT, seus personagens, suas família, seus títulos e algumas curiosodades sobre as filmagens da série.
@@ -26,7 +27,6 @@ stories_got
 
 <p>Em Alta</p>
 <img src="./img/alta_got.mp4"/>
-<img src="./img/alta_got.gif"/>
 
 ## 5. Objetivo de Aprendizagem:
 
@@ -43,18 +43,18 @@ HTML semântico
 
 ## 6. Checklist
 
-[✓] Usar VanillaJS.
-[✓] Passa pelo linter (npm run pretest)
-[✓] Passa pelos testes (npm test)
-[✓] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
-[✓] Inclui uma definição de produto clara e informativa no README.md.
-[✓] Inclui histórias de usuário no README.md.
-[✓] Inclui rascunho da solução (protótipo de baixa fidelidade) no README.md.
-[✓] Inclui uma lista de problemas detectados nos testes de usabilidade no README.md.
-[✓] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-[✓] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-[✓] UI: Permite filtrar dados com base em uma condição.
-[✓] UI: É responsivo.
+* [✓] Usar VanillaJS.
+* [✓] Passa pelo linter (npm run pretest)
+* [✓] Passa pelos testes (npm test)
+* [✓] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
+* [✓] Inclui uma definição de produto clara e informativa no README.md.
+* [✓] Inclui histórias de usuário no README.md.
+* [✓] Inclui rascunho da solução (protótipo de baixa fidelidade) no README.md.
+* [✓] Inclui uma lista de problemas detectados nos testes de usabilidade no README.md.
+* [✓] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
+* [✓] UI: Permite ordenar dados por um ou mais campos (asc e desc).
+* [✓] UI: Permite filtrar dados com base em uma condição.
+* [✓] UI: É responsivo.
 
 ## 7. Resultado Final
 
