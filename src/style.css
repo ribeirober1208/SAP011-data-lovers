@@ -321,7 +321,9 @@ footer {
 
   }
 
-  .menu ul {
+  .menu ul { 
+    display: flex;
+    flex-wrap: wrap;
     list-style: inside;
     padding: 5px 5px 5px 5px;
     margin: 0;
@@ -336,7 +338,7 @@ footer {
   .menu a {
     color: whitesmoke;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
   }
   .insertNameInput {
     width: 320px;
@@ -350,15 +352,15 @@ footer {
   }
 
   .filter-familyLabel {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .filter-label {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .filter-container {
-    font-size: 10px;
+    font-size: 12px;
   }
 
 }
