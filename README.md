@@ -1,7 +1,7 @@
 Readme
 <h1> 
 
- <img src="./img/img_dragon.png"/>
+ <img src="./src/img/img_dragon.png"/>
 img_dragon.png
 
 <p>Projeto Data-Lovers: Fãs de Games Of Thrones</p>
@@ -18,15 +18,15 @@ Navegue pelos 7 reinos de GoT, seus personagens, suas família, seus títulos e 
 Direto ao ponto, filtre sobre as famílias, organize de A-Z ou Z-A, e para os mais fãs digite o nome do personagem. É uma página para quem assistiu e para quem quer assistir. Entre nesse aventura épica.
 
 stories_got
- <img src="./img/stories_got.png"/>
+ <img src="./src/img/stories_got.png"/>
 
 ## 4. Layout
 
 <p>Em Baixa</p>
-<img src="./img/prototipo_baixa.jpg"/>
+<img src="./src/img/prototipo_baixa.jpg"/>
 
 <p>Em Alta</p>
-<img src="./img/alta_got.mp4"/>
+<img src="./src/img/alta_got.mp4"/>
 
 ## 5. Objetivo de Aprendizagem:
 
