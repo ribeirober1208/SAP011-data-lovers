@@ -98,7 +98,7 @@ main {
 }
 
 .filter {
-  border: white;
+  border: whitesmoke;
   justify-content: flex-end;
 }
 
@@ -219,6 +219,44 @@ main {
   border-radius: 10px;
   margin-bottom: 5px;
   color: white;
+}
+
+.menu-casas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.menu-casas h1 {
+  flex-basis: 100%;
+  margin: 3vh;
+  text-align: center;
+  font-size: 19px;
+
+}
+
+.menu-casas img {
+  width: 30vh;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+.menu-casas p {
+  flex: 1 0 50%;
+  padding: 0 0 0 20px;
+
+
+}
+
+ img.strong {
+  padding: 0 0 150px;
+
+}
+
+ p.strong {
+  padding: 0 0 150px 20px ;
+
 }
 
 footer {
@@ -361,6 +399,10 @@ footer {
 
   .filter-container {
     font-size: 12px;
+  }
+
+  .menu-casas img {
+    margin: 0 0 10% 20%;
   }
 
 }
