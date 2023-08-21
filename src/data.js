@@ -1,22 +1,13 @@
-// estas funciones son de ejemplo
 
-/*export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
-*/
-  export function filterCharactersByName(characters, searchName) {
+export function filterCharactersByName(characters, searchName) {
   if (!searchName) {
-      return characters;
+    return characters;
   } else {
-      const lowerSearchName = searchName.toLowerCase();
-      return characters.filter(character => {
-          const fullName = `${character.firstName} ${character.lastName} ${character.family}`.toLowerCase();
-          return fullName.includes(lowerSearchName);
-      });
+    const lowerSearchName = searchName.toLowerCase();
+    return characters.filter(character => {
+      const fullName = `${character.firstName} ${character.lastName} ${character.family}`.toLowerCase();
+      return fullName.includes(lowerSearchName);
+    });
   }
 }
 
@@ -31,9 +22,9 @@ export function sortCharactersByFullName(characters, order) {
 }
 
 export function filterCharactersByFamily(characters, selectedFamily) {
-   if (selectedFamily === '') {
+  if (selectedFamily === '') {
     return characters;
-   } else {
+  } else {
     return characters.filter(character => character.family === selectedFamily);
-   }
+  }
 } 
