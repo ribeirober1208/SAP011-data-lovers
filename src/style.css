@@ -57,7 +57,14 @@ header {
   justify-content: center;
   /*border: 15px solid yellow;*/
 }
-
+.off-out audio {
+  width: 12%;
+  height: 20px;
+  color: white;
+  background-color:transparent;
+  margin-left: 1100px;
+  margin-top:60px;
+}
 main {
   /*border: 15px solid green;*/
   display: flex;

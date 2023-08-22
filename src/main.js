@@ -100,6 +100,8 @@ fetch('./data/got/got.json')
 
     renderCards(data.got);
   })
+
+  
   .catch(error => {
     console.error('Error loading data:', error);
   });
