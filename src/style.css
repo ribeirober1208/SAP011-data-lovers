@@ -58,7 +58,7 @@ header {
   /*border: 15px solid yellow;*/
 }
 .off-out audio {
-  width: 12%;
+  width: 18%;
   height: 20px;
   color: white;
   background-color:transparent;
@@ -346,17 +346,25 @@ footer {
   text-align: center;
   padding: 10px;
 }
-.abertura-container{
+.abertura {
   color: white;
-  width: 50%;
-  padding-inline: 30px;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 50px;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 150px;
   margin-bottom: 80px;
-  font: size 18px;;
-  line-height: 2;
+  line-height: 3;
+  font-size: 45px;
+  text-align: center;
 }
+
+.abertura h1 {
+  font: size 45px;
+}
+
+.abertura a {
+  font: size 24px;
+}
+
 .look{
   width:100%px;
   height: 100%;
@@ -375,14 +383,14 @@ footer {
   color: white;
 }
 .kings {
-  width: 50% ;
+  width:50% ;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   color: whitesmoke;
   line-height: 2;
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-bottom: 80px;
 
 }
@@ -392,7 +400,6 @@ footer {
   margin: 3vh;
   text-align: center;
   font-size: 19px;
-
 }
 
 .kings img {
@@ -404,8 +411,6 @@ footer {
 .kings p {
   flex: 1 0 50%;
   padding: 0 0 0 20px;
-
-
 }
 
 @font-face {
