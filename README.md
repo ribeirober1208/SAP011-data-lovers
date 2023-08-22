@@ -2,7 +2,6 @@ Readme
 <h1> 
 
  <img src="./src/img/img_dragon.png"/>
-img_dragon.png
 
 <p>Projeto Data-Lovers: Fãs de Games Of Thrones</p>
 

@@ -109,7 +109,7 @@ main {
 .insertName {
   display: flex;
   color: whitesmoke;
- 
+
 }
 
 .insertNameInput {
@@ -118,7 +118,7 @@ main {
   padding: 5px 5px 5px 5px;
   text-align: center;
   justify-content: flex-starts;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .filter-container {
@@ -249,13 +249,13 @@ main {
 
 }
 
- img.strong {
+img.strong {
   padding: 0 0 150px;
 
 }
 
- p.strong {
-  padding: 0 0 150px 20px ;
+p.strong {
+  padding: 0 0 150px 20px;
 
 }
 
@@ -359,7 +359,7 @@ footer {
 
   }
 
-  .menu ul { 
+  .menu ul {
     display: flex;
     flex-wrap: wrap;
     list-style: inside;
@@ -378,9 +378,11 @@ footer {
     text-decoration: none;
     font-size: 14px;
   }
+
   .insertNameInput {
     width: 320px;
   }
+
   .all-filter {
     flex-direction: column;
     border: 2px solid rgb(247, 241, 246);
@@ -404,5 +406,7 @@ footer {
   .menu-casas img {
     margin: 0 0 10% 20%;
   }
+
+
 
 }
