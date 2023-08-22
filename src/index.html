@@ -11,7 +11,7 @@
   <header><a href="index.html">
       <img src="logo.png" class="logo" alt="Game Of Thrones"></a>
     <div class="off-out">
-      <audio src="./img/audio-got.mp3" controls>
+      <audio src="./img/audio-got.mp3" controls autoplay loop>
         O seu navegador não suporta o elemento <code>audio</code>.
       </audio>
     </div>
@@ -20,34 +20,23 @@
   <main>
     <img src="dragon.gif" class="background-dragon">
 
-    <nav class="menu">
-      <div class="insertName">
-        <p><input class="insertNameInput" id="insertNameInput" placeholder="Busque pelo nome"></p>
-      </div>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="casas.html">Casas</a></li>
-        <li><a href="reinos.html">Reinos</a></li>
-        <li><a href="personagens.html">Personagens</a></li>
-        <li><a href="curiosidades.html">Curiosidades</a></li>
-      </ul>
 
-    </nav>
 
 
     <div class="abertura-container" id="texto">
+
+      <strong> Navegue nessa aventura épica!</strong> "Game of Thrones" é uma série de fantasia épica
+      baseada nos livros de George R.R. Martin,
+      intitulados "As Crônicas de Gelo e Fogo". Cuidado! Podem haver spoilers.
       <video controls width="640" height="360">
         <source src="./img/abertura.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
-    </video>
-      <h1><strong> Navegue nessa aventura épica!</strong></h1>
-      <p> "Game of Thrones" é uma série de fantasia épica baseada nos livros de George R.R. Martin, 
-        intitulados "As Crônicas de Gelo e Fogo". A trama se passa no continente fictício de Westeros e
-        gira em torno da disputa pelo Trono de Ferro, que representa o controle dos Sete Reinos.
-      <P>  </P>
-      <p><h3>CUIDADO! PODEM HAVER SPOILERS!</h3></p>
-       
-      </p>
+      </video>
+      <nav class="menu">
+        <ul>
+          <a href="personagens.html">Começar</a>
+        </ul>
+      </nav>
     </div>
     <script src="main.js" type="module"></script>
     </div>

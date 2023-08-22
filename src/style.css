@@ -233,6 +233,8 @@ main {
   flex-wrap: wrap;
   align-items: center;
   color: whitesmoke;
+  line-height: 2;
+
 }
 
 .menu-casas h1 {
@@ -344,13 +346,14 @@ footer {
 }
 .abertura-container{
   color: white;
-  width: 60%;
+  width: 50%;
   padding-inline: 30px;
   justify-content: center;
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 100px;
   margin-bottom: 80px;
-  font-size: x-small;
+  font: size 18px;;
+  line-height: 2;
 }
 .look{
   width:100%px;
