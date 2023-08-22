@@ -25,7 +25,7 @@ stories_got
 <img src="./src/img/prototipo_baixa.jpg"/>
 
 <p>Em Alta</p>
-<img src="./src/img/alta_got.mp4"/>
+<img src="./src/img/alto_got.gif"/>
 
 ## 5. Objetivo de Aprendizagem:
 
@@ -58,7 +58,7 @@ HTML semântico
 ## 7. Resultado Final
 
  <p> Página em funcionamento </p>
- <img src="./img/projeto_got.mp4"/>
+ <img src="./src/img/projeto_got.gif"/>
    
 ## 8. Contato
 

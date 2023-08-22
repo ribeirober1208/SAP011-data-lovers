@@ -10,72 +10,34 @@
 <body>
   <header><a href="index.html">
       <img src="logo.png" class="logo" alt="Game Of Thrones"></a>
+    <div class="off-out">
+      <audio src="./img/audio-got.mp3" controls autoplay>
+        O seu navegador não suporta o elemento <code>audio</code>.
+      </audio>
+    </div>
+
   </header>
   <main>
     <img src="dragon.gif" class="background-dragon">
 
     <nav class="menu">
-      <div class="insertName">
-        <p><input class="insertNameInput" id="insertNameInput" placeholder="Busque pelo nome"></p>
-      </div>
+
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="home.html">Casas</a></li>
-        <li><a href="#">Reinos</a></li>
-        <li><a href="#">Personagens</a></li>
-        <li><a href="#">Curiosidades</a></li>
+        <li><a href="casas.html">Casas</a></li>
+        <li><a href="reinos.html">Reinos</a></li>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
       </ul>
 
-
     </nav>
-    <div id="principal">
-      <nav class="all-filter">
-        <div class="filter-container">
-          <label for="filter" class="filter-label">Ordenar por:</label>
-          <select id="filter">
-            <option value=""> Ordem alfabética </option>
-            <option value=""> </option>
-            <option value="a-z">A-Z</option>
-            <option value="z-a">Z-A</option>
-          </select>
-        </div>
-
-        <div class="filter-familyContainer">
-          <label for="filterFamily" class="filter-familyLabel">Filtrar por: </label>
-          <select id="filterFamily">
-            <option value="">Casas</option>
-            <option value="">--------</option>
-            <option value="Free Folk">Free Folk</option>
-            <option value="Baelish"> Baelish</option>
-            <option value="Baratheon"> Baratheon</option>
-            <option value="Bolton"> Bolton</option>
-            <option value="Clegane"> Clegane</option>
-            <option value="Greyjoy"> Greyjoy</option>
-            <option value="Lannister"> Lannister</option>
-            <option value="Martell"> Martell</option>
-            <option value="Mormont"> Mormont</option>
-            <option value="Naathi"> Naathi</option>
-            <option value="Naharis"> Naharis</option>
-            <option value="Seaworth"> Seaworth</option>
-            <option value="Stark"> Stark</option>
-            <option value="Sparrow"> Sparrow</option>
-            <option value="Targaryen"> Targaryen</option>
-            <option value="Tarly"> Tarly</option>
-            <option value="Tarth"> Tarth</option>
-            <option value="Tyrell"> Tyrell</option>
-            <option value="Viper"> Viper</option>
-            <option value="Unknown"> Desconhecido</option>
-          </select>
-        </div>
-
-        <div><button class="clean"><a href="index.html">Limpar</a></button></div>
-
-      </nav>
-
-      <div class="cards-container" id="cardsContainer"></div>
-
+    <nav class="abertura">
+      <h3><p>Bem vindo (a)!</p></h3>
+      <h3><p>Tenha uma ótima experiência!</p></h3>
+       <p>CUIDADO! Podem haver SPOILERS.</p>
+   </nav>
       <script src="main.js" type="module"></script>
-    </div>
+
+    
   </main>
   <footer class="contact">
     <p class="creaters">Desenvolvido por: <a href="https://github.com/ribeirober1208">Alessandra Ribeiro</a> | <a

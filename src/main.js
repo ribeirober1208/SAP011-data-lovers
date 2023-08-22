@@ -1,11 +1,3 @@
-/*import { example } from './sand-data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-
-console.log(example, data);*/
-
-
 import {
   sortCharactersByFullName,
   filterCharactersByFamily,
@@ -103,4 +95,4 @@ fetch('./data/got/got.json')
     });
 
     renderCards(data.got);
-  })
+  });

@@ -57,7 +57,14 @@ header {
   justify-content: center;
   /*border: 15px solid yellow;*/
 }
-
+.off-out audio {
+  width: 18%;
+  height: 20px;
+  color: white;
+  background-color:transparent;
+  margin-left: 1100px;
+  margin-top:60px;
+}
 main {
   /*border: 15px solid green;*/
   display: flex;
@@ -222,10 +229,14 @@ main {
 }
 
 .menu-casas {
+  width: 90%;
+  margin-left: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   color: whitesmoke;
+  line-height: 2;
+
 }
 
 .menu-casas h1 {
@@ -237,7 +248,7 @@ main {
 }
 
 .menu-casas img {
-  width: 30vh;
+  width: 20%;
   flex: 0 0 auto;
   justify-content: center;
 }
@@ -334,6 +345,72 @@ footer {
 .character-info {
   text-align: center;
   padding: 10px;
+}
+.abertura {
+  color: white;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 150px;
+  margin-bottom: 80px;
+  line-height: 3;
+  font-size: 45px;
+  text-align: center;
+}
+
+.abertura h1 {
+  font: size 45px;
+}
+
+.abertura a {
+  font: size 24px;
+}
+
+.look{
+  width:100%px;
+  height: 100%;
+  margin-right: 90px;
+  margin-top: 200px;
+  color: white;
+  display:flex;
+  flex-direction: column;
+}
+
+.look-text{
+  width:100%;
+  height: 100%;
+  margin-left: 250px;
+  margin-top: 250px;
+  color: white;
+}
+.kings {
+  width:50% ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  color: whitesmoke;
+  line-height: 2;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-bottom: 80px;
+
+}
+
+.kings h1 {
+  flex-basis: 100%;
+  margin: 3vh;
+  text-align: center;
+  font-size: 19px;
+}
+
+.kings img {
+  width: 30%;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+.kings p {
+  flex: 1 0 50%;
+  padding: 0 0 0 20px;
 }
 
 @font-face {
